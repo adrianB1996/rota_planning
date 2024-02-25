@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "*"
+pyprojroot = "*"
+tqdm = "*"
+matplotlib = "*"
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
+pandas = "*"
+dash = "*"
+dash-bootstrap-components = "*"
+black = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

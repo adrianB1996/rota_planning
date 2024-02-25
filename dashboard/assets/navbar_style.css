@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+}
+
+.nav-title {
+font-size: large;
+color: white;
+padding-left: 10px;
+text-decoration: none;
+}
+
+.link-items{
+    float: right;
+}
+
+
+
+.navbar{
+    width: 100%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar-collapse{
+    justify-content: flex-end;
+}
+
+.nav-link{
+    color: white;
+}
