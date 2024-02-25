@@ -16,7 +16,7 @@ days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 
 layout = html.Div(
     [
-        html.H1("Shift Schedule"),
+        html.H1("Shift Schedule",className="shift-title"),
         table.DataTable(
             id="shift-table",
             columns=[
@@ -46,9 +46,31 @@ layout = html.Div(
             dropdown={
                 "monday": {
                     "options": [{"label": i, "value": i} for i in dropdown_options]
-                }
+                },
+                "tuesday": {
+                    "options": [{"label": i, "value": i} for i in dropdown_options]
+                },
+                "wednesday": {
+                    "options": [{"label": i, "value": i} for i in dropdown_options]
+                },
+                "thursday": {
+                    "options": [{"label": i, "value": i} for i in dropdown_options]
+                },
+                "friday": {
+                    "options": [{"label": i, "value": i} for i in dropdown_options]
+                },
+                "saturday": {
+                    "options": [{"label": i, "value": i} for i in dropdown_options]
+                },
+                "sunday": {
+                    "options": [{"label": i, "value": i} for i in dropdown_options]
+                },
+                
             },
             row_deletable=True,
+    fill_width=False,
+    style_header={'textAlign': 'center'},
+    style_cell={'textAlign': 'center'}
         ),
         html.Button("Add Row", id="add-row-button", n_clicks=0),
     ]
